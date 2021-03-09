@@ -1,0 +1,122 @@
+body {
+  background-color: rgb(185, 250, 226);
+}
+
+header {
+  padding: 20px 10px;
+}
+
+#container > h1{
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+#container2 {
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px auto;
+  background-color: rgb(245, 245, 245);
+  border-radius: 30px;
+}
+
+#search_area {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#words_search {
+  width: 260px;
+  height: 30px;
+  border: inset 1.5px gray;
+  padding: 1px 3px;
+}
+
+#words_search_btn {
+  width: 30px;
+  height: 30px;
+  margin: 20px 0;
+  background-color: rgb(228, 227, 227);
+  border: solid 1px gray;
+  text-align: center;
+}
+
+.button_design {
+  width: 200px;
+  height: 30px;
+  /* margin: 20px 0; */
+  background-color: rgb(241, 240, 240);
+  border: solid 1px gray;
+  text-align: center;
+}
+
+.room_area {
+  height: 250px;
+  width: calc(600px + 10vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7px auto;
+  border: outset 1px rgb(201, 236, 155);
+  background-color: rgb(206, 238, 163);
+}
+
+.room_area > div {
+  width: 500px;
+}
+
+.room_area p {
+  margin-top: 10px;
+}
+
+.room_area form{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 10px;
+  /* text-align: center; */
+}
+
+.room_area .room_password{
+  width: 260px;
+  height: 30px;
+  border: inset 1.5px gray;
+  padding: 1px 3px;
+  background-color: honeydew;
+}
+
+.room_area button{
+  border: outset 2px rgb(138, 138, 138);
+}
+
+#room_delete_p {
+  margin-top: 10px;
+  text-align: right;
+}
+
+#paging {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+  margin-bottom: 10px;
+}
+
+#paging > button{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px;
+  background-color: rgb(228, 227, 227);
+  border: solid 1px gray;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}

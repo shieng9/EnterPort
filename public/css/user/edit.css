@@ -1,0 +1,79 @@
+.red {
+  color: red;
+}
+
+#container {
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+#container > h1 {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+#container > form {
+  margin-bottom: 0px;
+}
+
+table {
+  margin: 50px auto;
+  text-align: initial;
+}
+
+table > tr {
+  height: 50px;
+  margin: 20px auto;
+}
+
+tr > th {
+  text-align: right;
+}
+
+tr > td {
+  padding: 0 0 0 20px;
+}
+
+input {
+  width: 290px;
+  border: inset 1.5px gray;
+  padding: 1px 3px;
+  text-align: initial;
+}
+
+#distance {
+  padding: 0;
+  height: 50px;
+}
+
+.distance2 {
+  padding: 0;
+  height: 20px;
+}
+
+.button_design {
+  width: 170px;
+  height: 50px;
+  margin: 10px 0;
+  background-color: rgb(241, 240, 240);
+  border: solid 1px gray;
+  text-align: center;
+}
+
+#delete_area {
+  height: 200px;
+  width: 400px;
+  background-color: rgb(110, 216, 181);
+  margin: 20px auto;
+  padding: 20px 0;
+}
+
+#delete_area input {
+  margin: 20px auto;
+}
+
+#delete_area .button_design {
+  background-color: rgb(211, 210, 210);
+  border: solid 1px gray;
+}

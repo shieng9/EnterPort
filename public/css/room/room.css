@@ -1,0 +1,132 @@
+body {
+  background-color: rgb(185, 250, 226);
+}
+
+header {
+  padding: 20px 10px;
+}
+
+#container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#container > h1 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+#container2 {
+  /* height: 140px; */
+  /* display: flex;
+  justify-content: space-evenly; */
+  /* align-items: center; */
+  padding: 10px;
+  margin: 20px auto;
+  background-color: rgb(245, 245, 245);
+  border-radius: 30px;
+}
+
+#room_content {
+  width: 70%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+#search_area {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#words_search {
+  width: 260px;
+  height: 30px;
+  border: inset 1.5px gray;
+  padding: 1px 3px;
+  text-align: left;
+}
+
+#words_search_btn {
+  width: 30px;
+  height: 30px;
+  margin: 20px 0;
+  background-color: rgb(228, 227, 227);
+  border: solid 1px gray;
+  text-align: center;
+}
+
+.button_design {
+  width: 200px;
+  height: 40px;
+  margin: 10px 0;
+  background-color: rgb(241, 240, 240);
+  border: solid 1px gray;
+  text-align: center;
+}
+
+#comments_area {
+  margin-bottom: 220px;
+}
+
+.comment_area {
+  /* height: 250px; */
+  width: calc(500px + 10vw);
+  padding: 4px 5px;
+  margin: 7px auto;
+  border: outset 1px rgb(201, 236, 155);
+  background-color: rgb(206, 238, 163);
+}
+
+.comment_area_div {
+  text-align: left;
+}
+
+.comment_area_div span {
+  margin-right: 10px;
+}
+
+.comment_text {
+  padding: 10px;
+  text-align: left;
+}
+
+.delete_comment {
+  text-align: right;
+}
+
+textarea {
+  width: 400px;
+  border: inset 1.5px gray;
+  padding: 1px 3px;
+  text-align: initial;
+}
+
+#comment_send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  left: 5vw;
+  width: 90vw;
+  height: 180px;
+  background-color: rgb(243, 243, 243);
+  border: outset 3px rgb(243, 243, 243);
+  z-index: 2;
+}
+
+#comment_send .button_design {
+  width: 200px;
+  height: 30px;
+  margin: 5px 0;
+  background-color: rgb(233, 231, 231);
+  border: solid 1px gray;
+  text-align: center;
+}
+
+
+.hide {
+  display: none;
+}

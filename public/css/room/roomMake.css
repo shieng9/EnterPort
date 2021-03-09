@@ -1,0 +1,90 @@
+header {
+  padding: 20px 10px;
+}
+
+#container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#container > h1 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+#container > form {
+  margin-bottom: 0px;
+}
+
+table {
+  margin: 30px auto;
+}
+
+table tr {
+  height: 30px;
+  margin: 10px auto;
+}
+
+tr > th {
+  text-align: right;
+}
+
+tr > td {
+  /* padding: 0 0 0 20px; */
+}
+
+input {
+  width: 350px;
+  border: inset 1.5px gray;
+  padding: 1px 3px;
+  text-align: initial;
+}
+
+#distance {
+  padding: 0;
+  height: 50px;
+}
+
+.distance2 {
+  padding: 0;
+  height: 20px;
+}
+
+.button_design {
+  width: 170px;
+  height: 50px;
+  margin: 10px 0;
+  background-color: rgb(241, 240, 240);
+  border: solid 1px gray;
+  text-align: center;
+}
+
+#check_area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#check_area div{
+  width: 400px;
+  height: 110px;
+  padding: 10px;
+  border: solid 1px gray;
+}
+
+#check_area table{
+  margin: 10px auto;
+}
+
+#check_area input{
+  width: 80px;
+}
+
+textarea {
+  width: 400px;
+  border: inset 1.5px gray;
+  padding: 1px 3px;
+  text-align: initial;
+}

@@ -1,0 +1,17 @@
+#container {
+  width: 600px;
+  height: 310px;
+  padding: 80px;
+  margin: 20px auto;
+  text-align: center;
+  background-color: rgba(0, 255, 255, 0.438);
+}
+
+
+h1 {
+  margin-bottom: 50px;
+}
+
+p {
+  margin-bottom: 30px;
+}

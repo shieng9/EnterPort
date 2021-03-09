@@ -1,0 +1,15 @@
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: 30px auto;
+}
+
+.button_design {
+  width: 220px;
+  height: 40px;
+  margin: 20px 0;
+  background-color: rgb(241, 240, 240);
+  border: solid 1px gray;
+  text-align: center;
+}

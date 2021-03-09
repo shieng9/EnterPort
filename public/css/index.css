@@ -1,0 +1,22 @@
+#container {
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+#container > h1 {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.page_move {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90vw;
+  margin: 70px auto 10px;
+}
+
+.page_move2 {
+  text-align: center;
+  margin-top: 40px;
+}
