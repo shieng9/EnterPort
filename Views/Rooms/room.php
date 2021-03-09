@@ -36,7 +36,6 @@ if (!empty($_POST['comment'])) {
   require_once(ROOT_PATH .'Controllers/UsersRoomController.php');
   $addComment = new UsersRoomController();
   $error_msg = $addComment->roomAddComment();
-  $_POST = null;
 }
 
 ?>
@@ -114,7 +113,7 @@ if (!empty($_POST['comment'])) {
     const sessionId = <?php echo $_SESSION['id']; ?>;
     $(function(){
       commentAjax();
-      // setInterval(commentAjax, 10000);
+      setInterval(commentAjax, 10000);
       function commentAjax () {
         $.ajax({
           url: "/Server/UserRoomConnect.php", //送信先
@@ -140,20 +139,15 @@ if (!empty($_POST['comment'])) {
             let comment_area_div = $('<div>', { "class" : "comment_area_div"});
             let $comme_num = $('<span />', {"class": 'comment_num'}).append((commentNum + 1) + ".  ");
             comment_area_div.append($comme_num);
-            // comment_area.append($('<span>', { "html" : (commentNum + 1) + ".  " }));
             let $comme_date = $('<span />', {"class": 'comment_date'}).append("日時: " + (data[commentNum]['created_at'] ? data[commentNum]['created_at'] : ""));
             comment_area_div.append($comme_date);
-            // comment_area.append($('<span>', { "html" : "日時: " + data[commentNum]['created_at'] ? data[commentNum]['created_at'] : ""}));
             let $comment_user_id = $('<span />', {"class": 'comment_user_id'}).append("ユーザーID: " + (data[commentNum]['user_id'] ? data[commentNum]['user_id'] : ""));
             comment_area_div.append($comment_user_id);
-            // comment_area.append($('<span>', { "html" : "ユーザーID: " + data[commentNum]['user_id'] ? data[commentNum]['user_id'] : "" }));
             comment_area.append(comment_area_div);
             let $comme = $('<p />', {"class": 'comment_text'}).append(data[commentNum]['comment'] ? data[commentNum]['comment'] : "");
             comment_area.append($comme);
-            // comment_area.append($('<p>', { "class" : "comment_text"}, { "html" : data[commentNum]['comment'] ? data[commentNum]['comment'] : ""}));
             if(data[commentNum]['user_id'] == sessionId) {
               let delete_comment = $('<p>', { "class" : "delete_comment"});
-              // delete_comment.append($('<a>', { "href" : "./commentDelete.php?room_id="+(data[commentNum]['room_id'] ? data[commentNum]['room_id'] : "")+"&created_at="+(data[commentNum]['created_at'] ? data[commentNum]['created_at'] : "")}, { "onClick" : "return conf();" }, { "html" : "コメント削除" }));
               let $comme_dele = $('<a />', {"href": "./commentDelete.php?room_id="+(data[commentNum]['room_id'] ? data[commentNum]['room_id'] : "")+"&created_at="+(data[commentNum]['created_at'] ? data[commentNum]['created_at'] : "")}).append("コメント削除");
               $comme_dele = $comme_dele.attr("onClick", '"return conf();"');
               delete_comment.append($comme_dele);

@@ -58,37 +58,12 @@ $sth = null;
 function h($str){
   return htmlspecialchars($str, ENT_QUOTES, "UTF-8");
 }
-
 for ($i=0; $i < count($rows); $i++) { 
   $rows[$i]['user_id'] = h($rows[$i]['user_id']);
   $rows[$i]['room_id'] = h($rows[$i]['room_id']);
   $rows[$i]['comment'] = nl2br(h($rows[$i]['comment']));
   $rows[$i]['created_at'] = h($rows[$i]['created_at']);
 }
-// $rows['id'] = h($rows['id']);
-// $rows['user_id'] = h($rows['user_id']);
-// $rows['room_id'] = h($rows['room_id']);
-// $rows['comment'] = nl2br(h($rows['comment']));
-// $rows['created_at'] = h($rows['created_at']);
-
-// $room_id = null;
-// $room_password = null;
-
-// //jsonとして出力
-// header('Content-type: application/json');
-// echo json_encode($rows, JSON_UNESCAPED_UNICODE);
-
-//あらかじめ配列を生成しておき、while文で回します。
-// $return_array = [];
-// while($rows = $sth->fetch(PDO::FETCH_ASSOC)){
-//  $return_array = array(
-//   'user_id'=>$rows['user_id'],
-//   'comment'=>$rows['comment'],
-//   'created_at'=>$rows['created_at']
-//  );
-// }
-// $sql = null;
-// $sth = null;
 
 //jsonとして出力
 header('Content-type: application/json');

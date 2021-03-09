@@ -25,7 +25,7 @@ if(!empty($_POST)){
     require_once(ROOT_PATH .'Controllers/UserController.php');
     $user_login = new UserController();
     $error_msg = $user_login->login();
-    var_dump($error_msg);
+    // var_dump($error_msg);
 
     if($error_msg === null){
       header('Location: ../Rooms/roomsIndex.php');

@@ -40,7 +40,7 @@ if(!empty($_POST)){
     require_once(ROOT_PATH .'Controllers/UserController.php');
     $user_edit = new UserController();
     $error_msg = $user_edit->editComp();
-    var_dump($error_msg);
+    // var_dump($error_msg);
 
     if($error_msg === null){
       //セッションクリア

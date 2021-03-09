@@ -26,10 +26,6 @@ if(!empty($_POST)){
     
   // エラーがない場合、完了画面へ移る
   if(empty($error_msg)){
-    // HTML,PHPタグ対策
-    // $_POST['title'] = h($_POST['title']);
-    // $_POST['content'] = h($_POST['content']);
-
     require_once(ROOT_PATH .'Controllers/RoomController.php');
     $room_make = new RoomController();
     $error_msg = $room_make->roomMake();
